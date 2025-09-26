@@ -81,13 +81,13 @@ jobs:
             html_file="$output_dir/$notebook_name.html"
             sed -i "1i \
             <div style='margin: 20px;'>\
-              <a href='/pylearn' class='text-sm text-blue-600 hover:underline'>\
+              <a href='/cancer-image-analysis' class='text-sm text-blue-600 hover:underline'>\
                 ← Back to Index\
               </a>\
             </div>" "$html_file"
 
             echo "<script src='https://giscus.app/client.js'
-              data-repo='hasanshahriar32/pylearn'
+              data-repo='hasanshahriar32/cancer-image-analysis'
               data-repo-id="R_kgDONuqCDg"
               data-category="General"
               data-category-id="DIC_kwDONuqCDs4CmSGv"
@@ -155,7 +155,7 @@ jobs:
         run: |
           echo "<?xml version='1.0' encoding='UTF-8'?>" > docs/sitemap.xml
           echo "<urlset xmlns='http://www.sitemaps.org/schemas/sitemap/0.9'>" >> docs/sitemap.xml
-          base_url="https://hasanshahriar32.github.io/pylearn"
+          base_url="https://hasanshahriar32.github.io/cancer-image-analysis"
           for file in $(find docs -name "*.html" | sort); do
             relative_path=$(echo "$file" | sed 's|docs/||')
             file_url="$base_url/$relative_path"
