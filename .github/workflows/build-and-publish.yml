@@ -166,7 +166,10 @@ jobs:
             </url>" >> docs/sitemap.xml
           done
           echo "</urlset>" >> docs/sitemap.xml
-
+          
+      - name: Clean up dataset before deploy
+        run: |
+          rm -rf MultiModel\ Breast\ Cancer\ MSI\ Dataset
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
