@@ -25,6 +25,8 @@ jobs:
 
       - name: Convert Notebooks and Enhance Index Page Design
         run: |
+          # Ensure docs directory exists
+          mkdir -p docs
           # Start the enhanced Index Page
           echo "<html lang='en'>
                   <head>
