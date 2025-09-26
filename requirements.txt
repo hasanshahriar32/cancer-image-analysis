@@ -84,3 +84,7 @@ tokenizers==0.15.2
 huggingface-hub==0.19.4
 safetensors==0.4.1
 lime
+
+
+torch==2.3.0
+torchvision==0.18.0
