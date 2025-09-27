@@ -170,6 +170,7 @@ jobs:
       - name: Clean up dataset before deploy
         run: |
           rm -rf MultiModel\ Breast\ Cancer\ MSI\ Dataset
+          rm -rf BreaKHis_Total_dataset
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
